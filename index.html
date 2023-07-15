@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><span class="hight-light-text">Random Password</span> Generator</h1>
+            <p class="tag-line">Never use an insecure password again.</p>
+        </div>
+        <div class="passwor-generate-section">
+            <input type="text" class="password-length" id="passwordLength">
+            <button class="btn main-btn" onclick="generatePassword()">Generate</button>
+            <span class="msg-info" style="display:show;" id="msgInfo"></span>
+        </div>
+        <hr>
+        <div class="password-copy-section">
+            <button class="btn copy-text-btn" id="passwordFieldOne" onclick="copyPassword(1)"> </button>
+            <button class="btn copy-text-btn" id="passwordFieldTwo"onclick="copyPassword(2)"> </button>
+        </div>
+        <div class="footer">
+            &copy; <a href="https://github.com/rabin-thami" target="_blank"> Rabin Thami</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
